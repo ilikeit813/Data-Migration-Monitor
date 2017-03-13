@@ -32,7 +32,7 @@ from bokeh.embed import autoload_static
 import sys
 
 #"""
-fn = sorted(glob.glob('/Users/Jamie/VelaEWpointingtest/20*.txt'))
+fn = sorted(glob.glob('./20*.txt'))
 text = np.genfromtxt('./dvHeader.txt', dtype = "string")
 for i in range(len(fn)):
     text = np.c_[ text, np.genfromtxt(fn[i], dtype = "string", usecols=(18), delimiter=',') ]
@@ -56,10 +56,10 @@ df.to_csv('example.csv')
 #"""
 #csvfoo = sorted(glob.glob('datavisualizer.csv'))
 csvfoo = sorted(glob.glob('example.csv'))
-choice = 0
-print "=============================================="
-print 'The choice is ', csvfoo[choice]
-print "=============================================="
+#choice = 0
+#print "=============================================="
+#print 'The choice is ', csvfoo[choice]
+#print "=============================================="
 #df = pd.read_csv('datavisualizer.csv')
 df = pd.read_csv(csvfoo[choice])
 #"""
