@@ -6,3 +6,4 @@ The code will generate a scatter plot which user can pick/circle data points and
 https://github.com/bokeh/bokeh/tree/master/examples/app/stocks
 
 A screenshot
+![screenshot]({{site.baseurl}}/https://github.com/ilikeit813/Data-Migration-Monitor/blob/master/Screen%20Shot%202017-03-13%20at%203.39.11%20pm.png)
