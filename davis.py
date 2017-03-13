@@ -32,7 +32,7 @@ from bokeh.embed import autoload_static
 import sys
 
 #"""
-fn = sorted(glob.glob('./20*.txt'))
+fn = sorted(glob.glob('./data/20*.txt'))
 text = np.genfromtxt('./dvHeader.txt', dtype = "string")
 for i in range(len(fn)):
     text = np.c_[ text, np.genfromtxt(fn[i], dtype = "string", usecols=(18), delimiter=',') ]
